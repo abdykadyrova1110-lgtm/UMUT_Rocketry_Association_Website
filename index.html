@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMUT Rocketry Association</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" data-page="home">
+      <img src="logo.jpg" alt="UMUT Rocketry Association logo">
+      <span>UMUT<br><small>ROCKETRY ASSOCIATION</small></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <button data-page="home" data-i18n="navHome">О нас</button>
+      <button data-page="events" data-i18n="navEvents">Мероприятия</button>
+      <button data-page="achievements" data-i18n="navAchievements">Достижения</button>
+      <button data-page="lessons" data-i18n="navLessons">Уроки</button>
+      <button data-page="register" class="nav-register" data-i18n="navRegister">Регистрация</button>
+    </nav>
+
+    <div class="social-links" aria-label="Социальные сети UMUT Rocketry Association">
+      <a href="https://www.instagram.com/rocketry.umut?stkn=MWl4ZXI0aGY1MXd4eQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram UMUT Rocketry" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="social-dot" cx="18" cy="6" r="1"></circle></svg>
+      </a>
+      <a href="https://www.youtube.com/channel/UCsfF1uAZ4yNkc_-Klbppuog" target="_blank" rel="noopener noreferrer" aria-label="YouTube UMUT Rocketry" title="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"></path><path class="social-play" d="m10 15.5 5.2-3.5L10 8.5z"></path></svg>
+      </a>
+      <a href="https://t.me/umutrocketry" target="_blank" rel="noopener noreferrer" aria-label="Telegram UMUT Rocketry" title="Telegram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="social-telegram" d="M21.7 4.4 18.4 20c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.6.6-1.2.6l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.6 13.5.7 12c-1.1-.3-1.1-1.1.2-1.6L20 2.9c.9-.3 2 .2 1.7 1.5Z"></path></svg>
+      </a>
+    </div>
+
+    <div class="langs">
+      <button class="lang active" data-lang="ru">RU</button>
+      <button class="lang" data-lang="ky">KG</button>
+      <button class="lang" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-text">
+          <div class="eyebrow" data-i18n="heroEyebrow">UMUT ROCKETRY ASSOCIATION</div>
+          <h1 data-i18n="heroTitle">Создаём. Запускаем. Достигаем.</h1>
+          <p data-i18n="heroText">Объединение школьников и молодых инженеров, которые изучают ракетостроение, физику, программирование и аэродинамику.</p>
+          <div class="hero-buttons">
+            <button class="primary" data-page="register" data-i18n="join">Присоединиться</button>
+            <button class="secondary" data-page="lessons" data-i18n="learn">Начать учиться</button>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit1"></div>
+          <div class="orbit orbit2"></div>
+          <div class="rocket">🚀</div>
+          <div class="star s1">✦</div><div class="star s2">✦</div><div class="star s3">•</div>
+        </div>
+      </div>
+
+      <div class="section intro">
+        <div>
+          <div class="section-tag" data-i18n="aboutTag">ОБ АССОЦИАЦИИ</div>
+          <h2 data-i18n="aboutTitle">UMUT — это место, где идея превращается в полёт.</h2>
+        </div>
+        <p data-i18n="aboutText">Мы создаём образовательную среду, в которой участники могут собрать свою первую модель ракеты, провести расчёты, научиться работать с командами и проверить свои идеи на практике.</p>
+      </div>
+
+      <div class="cards three">
+        <article class="card"><span class="icon">◈</span><h3 data-i18n="card1Title">Практика</h3><p data-i18n="card1Text">Проектируем и собираем модели ракет.</p></article>
+        <article class="card"><span class="icon">⌁</span><h3 data-i18n="card2Title">Наука</h3><p data-i18n="card2Text">Изучаем физику, аэродинамику и математику.</p></article>
+        <article class="card"><span class="icon">↗</span><h3 data-i18n="card3Title">Команда</h3><p data-i18n="card3Text">Развиваем лидерство, инженерное мышление и teamwork.</p></article>
+      </div>
+
+      <section class="team-section" aria-labelledby="teamTitle">
+        <a class="team-photo-link" href="https://www.instagram.com/p/DY1IrwejBsL/?stkn=MWV2ZXFoMzNjamVsbg==" target="_blank" rel="noopener noreferrer" aria-label="Открыть публикацию UMUT Rocketry Association в Instagram">
+          <img class="team-photo" src="team-photo.webp" alt="Коллаж Meet the Team из публикации UMUT Rocketry Association">
+          <span class="team-photo-badge">UMUT ROCKETRY</span>
+        </a>
+        <div class="team-copy">
+          <div class="section-tag" data-i18n="teamTag">ВМЕСТЕ К НОВЫМ ВЫСОТАМ</div>
+          <h2 id="teamTitle" data-i18n="teamTitle">Наша команда</h2>
+          <p data-i18n="teamText">Участники UMUT Rocketry Association вместе изучают ракетостроение, поддерживают друг друга и готовятся к новым проектам и соревнованиям.</p>
+          <a class="team-post-link" href="https://www.instagram.com/p/DY1IrwejBsL/?stkn=MWV2ZXFoMzNjamVsbg==" target="_blank" rel="noopener noreferrer"><span data-i18n="teamLink">Смотреть публикацию в Instagram</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </section>
+
+    <section id="events" class="page">
+      <div class="page-head"><div class="section-tag">EVENTS</div><h1 data-i18n="eventsTitle">Мероприятия</h1><p data-i18n="eventsIntro">События, соревнования и встречи UMUT Rocketry Association.</p></div>
+      <div class="timeline">
+        <article class="event"><div class="date">01<br><span>OCT</span></div><div><h3 data-i18n="event1Title">Rocket Workshop</h3><p data-i18n="event1Text">Практический воркшоп по устройству и стабилизации модели ракеты.</p><span class="pill" data-i18n="free">Бесплатно</span></div></article>
+        <article class="event"><div class="date">12<br><span>OCT</span></div><div><h3 data-i18n="event2Title">Model Rocket Launch</h3><p data-i18n="event2Text">Демонстрационный запуск и тестирование моделей участников.</p><span class="pill" data-i18n="registration">Регистрация открыта</span></div></article>
+        <article class="event"><div class="date">26<br><span>OCT</span></div><div><h3 data-i18n="event3Title">Space Science Day</h3><p data-i18n="event3Text">Лекции, мини-эксперименты и командные задания о космосе.</p><span class="pill" data-i18n="soon">Скоро</span></div></article>
+      </div>
+    </section>
+
+    <section id="achievements" class="page">
+      <div class="page-head"><div class="section-tag">OUR RESULTS</div><h1 data-i18n="achTitle">Достижения</h1><p data-i18n="achIntro">Наши результаты — это знания, проекты и опыт, который участники получают вместе.</p></div>
+      <div class="stats">
+        <div><b>01</b><span data-i18n="stat1">Образовательное ракетное объединение</span></div>
+        <div><b>∞</b><span data-i18n="stat2">Идей для новых проектов</span></div>
+        <div><b>100%</b><span data-i18n="stat3">Фокус на обучении и практике</span></div>
+      </div>
+      <div class="achievement-grid">
+        <article class="achievement"><div class="big">🚀</div><h3 data-i18n="ach1">Модельные ракеты</h3><p data-i18n="ach1Text">Разработка конструкций, расчёт финсов и подготовка моделей к запуску.</p></article>
+        <article class="achievement"><div class="big">📐</div><h3 data-i18n="ach2">Инженерные расчёты</h3><p data-i18n="ach2Text">Работа с размерами, массой, аэродинамикой и устойчивостью.</p></article>
+        <article class="achievement"><div class="big">💡</div><h3 data-i18n="ach3">Новые навыки</h3><p data-i18n="ach3Text">Командная работа, презентации, проектирование и решение задач.</p></article>
+      </div>
+    </section>
+
+    <section id="lessons" class="page">
+      <div class="page-head"><div class="section-tag">LEARN</div><h1 data-i18n="lessonsTitle">Уроки</h1><p data-i18n="lessonsIntro">Начни с основ и постепенно переходи к созданию собственной модели.</p></div>
+      <div class="lesson-grid">
+        <article class="lesson"><span>01</span><h3 data-i18n="lesson1">Основы ракетостроения</h3><p data-i18n="lesson1Text">Части ракеты, назначение каждой детали и принцип полёта.</p></article>
+        <article class="lesson"><span>02</span><h3 data-i18n="lesson2">Стабильность и финсы</h3><p data-i18n="lesson2Text">Как финсы помогают ракете сохранять устойчивость.</p></article>
+        <article class="lesson"><span>03</span><h3 data-i18n="lesson3">Аэродинамика</h3><p data-i18n="lesson3Text">Сопротивление воздуха, форма корпуса и центр давления.</p></article>
+        <article class="lesson"><span>04</span><h3 data-i18n="lesson4">Физика полёта</h3><p data-i18n="lesson4Text">Сила тяги, масса, ускорение и высота полёта.</p></article>
+        <article class="lesson"><span>05</span><h3 data-i18n="lesson5">Проектирование</h3><p data-i18n="lesson5Text">Переходим от идеи к чертежу и прототипу.</p></article>
+        <article class="lesson"><span>06</span><h3 data-i18n="lesson6">Тестирование</h3><p data-i18n="lesson6Text">Проверяем модель и анализируем результаты.</p></article>
+      </div>
+    </section>
+
+    <section id="register" class="page">
+      <div class="register-wrap">
+        <div class="page-head"><div class="section-tag">JOIN UMUT</div><h1 data-i18n="regTitle">Регистрация</h1><p data-i18n="regIntro">Заполни форму, чтобы присоединиться к ассоциации.</p></div>
+        <form id="form" method="post" novalidate>
+          <label for="fullName"><span><span data-i18n="name">Имя и фамилия</span> <span class="required-star" aria-hidden="true">*</span></span><input id="fullName" name="fullName" required type="text" autocomplete="name" maxlength="120" /></label>
+          <label for="age"><span><span data-i18n="age">Возраст</span> <span class="required-star" aria-hidden="true">*</span></span><input id="age" name="age" required type="number" min="10" max="30" step="1" inputmode="numeric" /></label>
+          <label for="email"><span><span data-i18n="email">Email</span> <span class="required-star" aria-hidden="true">*</span></span><input id="email" name="email" required type="email" autocomplete="email" maxlength="254" aria-describedby="emailError" /></label>
+          <span class="field-error" id="emailError" aria-live="polite"></span>
+          <label for="school"><span><span data-i18n="school">Школа / учебное учреждение</span> <span class="required-star" aria-hidden="true">*</span></span><input id="school" name="school" required type="text" autocomplete="organization" maxlength="160" /></label>
+          <label for="phone"><span><span data-i18n="phone">Номер телефона</span> <span class="required-star" aria-hidden="true">*</span></span><input id="phone" name="phone" required type="tel" inputmode="tel" autocomplete="tel" placeholder="+996 555 123 456" maxlength="16" aria-describedby="phoneError" /></label>
+          <span class="field-error" id="phoneError" aria-live="polite"></span>
+          <label for="teamName"><span><span data-i18n="team">Название команды</span> <span class="required-star" aria-hidden="true">*</span></span><input id="teamName" name="teamName" required type="text" maxlength="120" /></label>
+          <input class="form-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="requestId" id="requestId">
+          <p class="privacy-notice" data-i18n="privacyNotice">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь на обработку предоставленных персональных данных для целей регистрации. Ваши данные не публикуются и доступны только уполномоченным администраторам.</p>
+          <button class="primary" id="submitButton" type="submit" data-i18n="send">Зарегистрироваться</button>
+          <p id="success" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <iframe class="form-response-frame" name="registrationResponse" title="" aria-hidden="true"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>UMUT ROCKETRY ASSOCIATION</strong><p data-i18n="footer">Наука. Команда. Полёт.</p></div>
+    <div>© 2026 UMUT</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
